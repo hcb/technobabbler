@@ -1,0 +1,50 @@
+{
+    "Verb": [
+        "Realign",
+        "Fluctuate",
+        "Defrag",
+        "Unclog",
+        "Recalibrate",
+        "Reconfigure",
+        "Decouple",
+        "Reroute",
+        "Restart",
+        "Synchronize"
+    ],
+    "Adjective": [
+        "harmonic",
+        "optical",
+        "auxiliary",
+        "multi-spacial",
+        "primary",
+        "asymmetrical",
+        "proton",
+        "nanotech",
+        "dorsal",
+        "magnetic"
+    ],
+    "Secondary": [
+        "sensor",
+        "fusion",
+        "resonance",
+        "torsional",
+        "gear",
+        "gas", 
+        "reaction", 
+        "shift", 
+        "feedback", 
+        "particle"
+    ],
+    "Noun": [
+        "array", 
+        "matrix",
+        "modulator",
+        "core",
+        "assembly",
+        "manifold",
+        "infuser",
+        "inducer",
+        "loop",
+        "inverter"
+    ]
+}
