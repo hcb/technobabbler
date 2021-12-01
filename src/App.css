@@ -1,83 +1,86 @@
+@import url('index.css');
 
-.dice {
- display: flex;
- justify-content: space-evenly;
+.App {
+  display: flex;
+  flex-flow: column;
+}
+
+.App>* {
+  flex: 1 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 auto;
+  color: var(--orange);
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.generator {
+  display: flex;
+
+  border-radius: 3rem 2rem;
+  background-color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.engineer {
+  padding: 0.5rem 0.5rem 0;
 }
 
 .phrase {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   text-align: center;
   padding: 1rem 0;
   margin: 1rem;
-  background: #ccc;
+  background: var(--yellow);
   border-radius: 1rem;
-}
-
-.part {
-  align-self: end;
-  flex-shrink: 1;
-}
-/* .dice {
-  width: 80rem;
-  height: 500px;
+  color: black;
   position: relative;
-  left: 0;
-  top: 0;
 }
-.die {
-  height: 10rem;
-  width: 10rem;
+
+.phrase:before {
+  content: "";
   position: absolute;
-  left: 0;
-  bottom: 50%;
+  right: 100%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 20px solid var(--yellow);
+  border-bottom: 10px solid transparent;
 }
 
-.dice:hover .die {
-
-  animation-duration: 1s;
-  animation-name: bounce;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  
+.saved {
+  color: #333;
+  padding: 1rem;
 }
 
-@keyframes bounce {
-
-  0% {
-    left: 0;
-    bottom: 50%;
-    transform: rotateZ(0deg);
-  }
-
-  20% {
-    left: 20%;
-    bottom: 0;
-    transform: rotateZ(60deg);
-  }
-
-  40% {
-    left: 40%;
-    bottom: 25%;
-    transform: rotateZ(120deg);
-  }
-
-  60% {
-    left: 60%;
-    bottom: 0;
-    transform: rotateZ(180deg);
-  }
-
-  80% {
-    left: 80%;
-    bottom: 15%;
-    transform: rotateZ(240deg);
-  }
-
-  100% {
-    left: 100%;
-    bottom: 0;
-    transform: rotateZ(300deg);
-  }
+button {
+  background-color: var(--orange);
+  border: none;
+  padding: 1rem;
+  font-family: 'Zen Dots';
+  margin: 0.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  transition: background 150ms;
+  cursor: pointer;
 }
- */
+
+button:hover {
+  background-color: var(--mustard);
+}
+
+.dice .individual {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.dice .controls {
+  margin-top: 1rem;
+  text-align: center;
+}

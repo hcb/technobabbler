@@ -3,6 +3,7 @@ export enum WordActionType {
     Noun = "noun",
     Adjective = "adjective",
     Secondary = "secondary",
+    Save = "save",
     All = "all"
 }
 
@@ -16,5 +17,6 @@ export type ActionType =
     | { type: WordActionType.Noun, payload: Roll}
     | { type: WordActionType.Adjective, payload: Roll}
     | { type: WordActionType.Secondary, payload: Roll}
-    | { type: WordActionType.All, payload: object };
+    | { type: WordActionType.All, payload: object }
+    | { type: WordActionType.Save, payload: string}
 

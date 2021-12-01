@@ -1,13 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+:root {
+  --gray: #848484;
+  --yellow: #f6ef95;
+  --mustard: #ffce63;
+  --purple: #9c639c;
+  --pink: #ce9cce;
+  --orange: #ff9c00;
+  --red: #ce6363;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Zen Dots', Impact;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #333;
+  color: #eee;
+  line-height: 1.5;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: var(--pink);
+}
+
+a:visited {
+  color: var(--purple);
 }

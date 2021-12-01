@@ -13,12 +13,13 @@ interface DieProps {
 const Die = ({ list, actionType, roll, handleChange }: DieProps) => {
     return (
         <div className="die-wrapper">
+            <p>{roll.content}</p>
             <div className="die">
-                <p className="roll">{roll.value}</p>
+                <span className="roll">{roll.value + 1}</span>
             </div>
             <button
                 onClick={(e: any) => handleChange(list, actionType)}>Roll</button>
-            <p>{roll.content}</p>
+
         </div>
     );
 }

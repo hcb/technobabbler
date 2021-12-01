@@ -1,15 +1,32 @@
+@import url('index.css');
+
+:root {
+    --dice-width: 9rem;
+}
+
 .die-wrapper {
-    align-content: center;
     display: flex;
+    align-content: center;
     flex-direction: column;
     text-align: center;
+    width: var(--dice-width);
+    margin: 0 0.5rem;
+}
+
+p {
+    background-color: var(--yellow);
+    margin: 0;
+    padding: 0.5rem 0;
+    border-radius: 1rem 1rem 0 0;
+
+    width: var(--dice-width);
 }
 
 .die {
     height: 4.5rem;
-    width: 4.5rem;
-    border: 1px solid black;
-    border-radius: 4px;
+    width: var(--dice-width);
+    background-color: var(--gray);
+    border-radius: 0 0 1rem 1rem;
     margin: 0 auto;
 }
 
